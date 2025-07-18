@@ -3,51 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <title>Joshua Smith-O’Brien – Resume</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+<script>
+  const robot = document.createElement('div');
+  robot.textContent = '🤖';
+  robot.style.position = 'fixed';
+  robot.style.pointerEvents = 'none';
+  robot.style.fontSize = '24px';
+  robot.style.transition = 'top 0.1s linear, left 0.1s linear';
+  document.body.appendChild(robot);
 
-    body {
-      font-family: 'Inter', sans-serif;
-      background: linear-gradient(to right, #e0eafc, #cfdef3);
-      margin: 0;
-      padding: 2rem;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      min-height: 100vh;
-      color: #333;
-    }
-
-    .container {
-      background: #ffffffcc;
-      backdrop-filter: blur(8px);
-      padding: 2rem;
-      border-radius: 12px;
-      max-width: 800px;
-      width: 100%;
-      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
-    }
-
-    h1, h2, h3 {
-      margin-top: 0;
-      color: #1a1a1a;
-    }
-
-    ul {
-      padding-left: 1.25rem;
-    }
-
-    a {
-      color: #0056b3;
-      text-decoration: none;
-      transition: color 0.2s ease;
-    }
-
-    a:hover {
-      color: #003d80;
-      text-decoration: underline;
-    }
-  </style>
+  document.addEventListener('mousemove', (e) => {
+    robot.style.left = e.pageX + 10 + 'px';
+    robot.style.top = e.pageY + 10 + 'px';
+  });
+</script>
 </head>
 <body>
   <div class="container">
