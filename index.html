@@ -3,20 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <title>Joshua Smith-O’Brien – Resume</title>
-<script>
-  const robot = document.createElement('div');
-  robot.textContent = '🤖';
-  robot.style.position = 'fixed';
-  robot.style.pointerEvents = 'none';
-  robot.style.fontSize = '24px';
-  robot.style.transition = 'top 0.1s linear, left 0.1s linear';
-  document.body.appendChild(robot);
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
-  document.addEventListener('mousemove', (e) => {
-    robot.style.left = e.pageX + 10 + 'px';
-    robot.style.top = e.pageY + 10 + 'px';
-  });
-</script>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #e0eafc, #cfdef3);
+      margin: 0;
+      padding: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      color: #333;
+    }
+
+    .container {
+      background: #ffffffcc;
+      backdrop-filter: blur(8px);
+      padding: 2rem;
+      border-radius: 12px;
+      max-width: 800px;
+      width: 100%;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h2, h3 {
+      margin-top: 0;
+      color: #1a1a1a;
+    }
+
+    ul {
+      padding-left: 1.25rem;
+    }
+
+    a {
+      color: #0056b3;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    a:hover {
+      color: #003d80;
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
@@ -29,7 +60,7 @@
       🐙 <a href="https://github.com/jsmith-obrien" target="_blank">GitHub</a>
     </p>
 
-    <h3>Summary!</h3>
+    <h3>Summary</h3>
     <p>
       Staff Engineer with 15+ years in QA/automation, breaking down Dev/QA walls and building test frameworks that stick. Genuinely enjoys cutting regression time by 50% and turning “just ship it” into “ship it with confidence.” Ready to bring that same energy abroad and ensure quality isn’t just a checkbox.
     </p>
@@ -95,20 +126,8 @@
       <li>BA in Political Science – University at Buffalo</li>
       <li>MA in History – University at Buffalo</li>
     </ul>
-  </div><script>
-  const logo = document.createElement('img');
-  logo.src = 'bills-logo.svg';
-  logo.alt = 'Buffalo Bills';
-  logo.style.position = 'fixed';
-  logo.style.pointerEvents = 'none';
-  logo.style.width = '40px';
-  logo.style.transition = 'top 0.1s linear, left 0.1s linear';
-  document.body.appendChild(logo);
+  </div>
 
-  document.addEventListener('mousemove', (e) => {
-    logo.style.left = e.pageX + 10 + 'px';
-    logo.style.top = e.pageY + 10 + 'px';
-  });
-</script>
-</body>
-</html>
+  <script>
+    const robot = document.createElement('div');
+    robot.textContent = '
