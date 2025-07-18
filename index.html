@@ -128,6 +128,23 @@
     </ul>
   </div>
 
+  <!-- 🤖 Robot Cursor Buddy -->
   <script>
-    const robot = document.createElement('div');
-    robot.textContent = '
+    document.addEventListener('DOMContentLoaded', () => {
+      const robot = document.createElement('div');
+      robot.innerText = '🤖';
+      robot.style.position = 'fixed';
+      robot.style.fontSize = '24px';
+      robot.style.pointerEvents = 'none';
+      robot.style.transition = 'top 0.05s linear, left 0.05s linear';
+      robot.style.zIndex = '9999';
+      document.body.appendChild(robot);
+
+      document.addEventListener('mousemove', (e) => {
+        robot.style.left = (e.clientX + 10) + 'px';
+        robot.style.top = (e.clientY + 10) + 'px';
+      });
+    });
+  </script>
+</body>
+</html>
