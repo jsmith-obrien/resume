@@ -126,19 +126,19 @@
       <li>BA in Political Science – University at Buffalo</li>
       <li>MA in History – University at Buffalo</li>
     </ul>
-  </div>
-  <script>
-  const bee = document.createElement('div');
-  bee.textContent = '🐝';
-  bee.style.position = 'fixed';
-  bee.style.pointerEvents = 'none';
-  bee.style.fontSize = '24px';
-  bee.style.transition = 'top 0.1s linear, left 0.1s linear';
-  document.body.appendChild(bee);
+  </div><script>
+  const logo = document.createElement('img');
+  logo.src = 'bills-logo.svg';
+  logo.alt = 'Buffalo Bills';
+  logo.style.position = 'fixed';
+  logo.style.pointerEvents = 'none';
+  logo.style.width = '40px';
+  logo.style.transition = 'top 0.1s linear, left 0.1s linear';
+  document.body.appendChild(logo);
 
   document.addEventListener('mousemove', (e) => {
-    bee.style.left = e.pageX + 10 + 'px';
-    bee.style.top = e.pageY + 10 + 'px';
+    logo.style.left = e.pageX + 10 + 'px';
+    logo.style.top = e.pageY + 10 + 'px';
   });
 </script>
 </body>
